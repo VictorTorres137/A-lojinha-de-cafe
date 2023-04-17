@@ -11,21 +11,19 @@ $color-secondary:rgb(216, 159, 83);
     font-family: $font-family-monospace;
 }
 
-
-
-
 body{
+    
+}
+
+.home{
     background-image: url(../Imagens/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 
-    
-}
-
-.home{
-    
     .header{
+        display: flex;
+        justify-content: center;
         .nav{
             background-color: rgba(0, 0, 0, 0.103);
             padding: 30px 0;
@@ -41,6 +39,7 @@ body{
                     min-width: 200px;
                     
                     justify-content:center;
+                    
 
                     a{
                         text-decoration: none;
@@ -72,7 +71,7 @@ body{
         }
     }
    .slogan{
-    margin: 50px;
+        margin: 50px;
         padding: 30px;
         width: 500px;
         // height: 400px;
@@ -94,4 +93,33 @@ body{
     }
 
     
+    
 }
+
+.produtosPg{
+    background-color:$color-primary;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    
+    .listProducts{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        justify-content: space-around;
+        
+
+        li{
+            
+            .imgEx{
+                height: 100px;
+            }
+        }
+        
+    }
+}
+    

@@ -5,13 +5,16 @@
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-body {
+.home {
   background-image: url(../Imagens/fundo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-
+.home .header {
+  display: flex;
+  justify-content: center;
+}
 .home .header .nav {
   background-color: rgba(0, 0, 0, 0.103);
   padding: 30px 0;
@@ -63,4 +66,22 @@ body {
   padding-top: 50px;
   font-size: 20px;
   color: rgb(216, 159, 83);
+}
+
+.produtosPg {
+  background-color: rgb(197, 116, 22);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.produtosPg .listProducts {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+}
+.produtosPg .listProducts li .imgEx {
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */
