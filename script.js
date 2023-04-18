@@ -1,23 +1,21 @@
 
-let n = "short"
-let a = (n.length > 6)
-let b = false
-let c = false
+const desc = document.querySelectorAll('.desc')
+let items = document.querySelectorAll('.items')
 
-for (item of n){
-    let j = isNaN(`${item}`)
 
-    if(j == true){
-        b = true
-    }else
-        c = true
+function descOn(){
+    desc.classList.add('descOn')
+
+}
+
+function descOff(){
+    desc.classList.remove('descOn')
     
 }
-
-if ((a && b)&&(b && c)){
-    console.log(true);
-} else{
-    console.log(false);
+for(item of items){
+    console.log(item)
+    item.addEventListener("mouseover", function(){
+        item.children
+    })
+    item.addEventListener("mouseout", descOff)
 }
-
-console.log(n)
