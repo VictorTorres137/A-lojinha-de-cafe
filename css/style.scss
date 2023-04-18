@@ -49,6 +49,8 @@ body{
                         
                         padding: 10px;
                         margin: 20px;
+                        transition: background-color 500ms;
+                        transition: border-bottom 500ms;
 
                     }
     
@@ -97,27 +99,38 @@ body{
 }
 
 .produtosPg{
-    background-color:$color-primary;
+    background-image: url('../Imagens/farm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color:$color-primary;
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-
     
     .listProducts{
         display: flex;
         width: 100%;
         list-style: none;
+        align-items: center;
         justify-content: space-around;
         
 
-        li{
+        .item{
             
             .imgEx{
-                height: 100px;
+                height: 400px;
+                border-radius: 20px;
+                border: 3px solid white;
+                box-shadow: 2px 2px 5px rgb(15, 15, 15);
+                transition: height 500ms;
             }
+        }
+        .item:hover{
+            .imgEx{
+                height: 450px;
+                
+            }
+
         }
         
     }
